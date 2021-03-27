@@ -34,7 +34,7 @@ class CalcRequestSchema(BaseModel):
 
 
 class CalcResponseSchema(BaseModel):
-    result: int
+    result: int = Field(gt=0)
 
 
 class CalcErrorResponseSchema(BaseModel):
